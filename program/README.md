@@ -18,4 +18,4 @@ Two principal components analysis (PCA) in tree space mentioned in the paper:
 * lpSolveAPI
 
 # Environment
-We use parallel computing because the method used in the paper requires a lot of calculations. Only a Windows version is available right now. Users can modify the source code to create the Linux version of the codes according to their needs.
+We use parallel computing because the method used in the paper requires a lot of calculations. Only a Windows version is available right now. Users can modify the source code to create the Linux version according to their needs.
