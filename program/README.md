@@ -10,7 +10,7 @@ Two principal components analysis (PCA) in tree space mentioned in the paper:
 * Tropical PCA: https://arxiv.org/abs/1710.02682.
 * BHV PCA: https://arxiv.org/abs/1609.03045.
 
-# Required R package
+# Required R packages
 
 * `ape`
 * `phangorn`
