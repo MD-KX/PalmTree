@@ -12,10 +12,10 @@ Two principal components analysis (PCA) in tree space mentioned in the paper:
 
 # Required R package
 
-* ape
-* phangorn
-* parallel
-* lpSolveAPI
+* `ape`
+* `phangorn`
+* `parallel`
+* `lpSolveAPI`
 
 # Environment
 We use parallel computing because the method used in the paper requires a lot of calculations. Only a Windows version is available right now. Users can modify the source code to create the Linux version according to their needs.
