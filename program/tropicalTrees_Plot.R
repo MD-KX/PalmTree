@@ -3,7 +3,7 @@ library(ape)
 library(phangorn)
 library(parallel)
 setwd("C:/Users/kangq/Desktop/program")
-# "func_ssh.R" file includes all the functions we need for calculating with tropical PCA 
+# "func_ssh.R" file includes all the functions needed for plotting tropical PCA. 
 source("./func_ssh.R")
 cl <- makeCluster(6) # Define the number of clusters
 
