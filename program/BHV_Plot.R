@@ -3,8 +3,12 @@ library(ape)
 library(ggplot2)
 
 
-# The ".trop" file is define by user. Basically, it is the output of the JAVA program, geophytterplus.DecomposeLFMTriangle.
-# The ".colc" file is define by user. It is a PART of the output of the JAVA program, geophytterplus.FitLFMTriangle.
+# NYh3n2_HA_20000_4_1993.txt: the original data.
+# NYh3n2_HA_20000_4_1993.col: the output of geophytterplus.FitLFMTriangle. Separated into two parts, .tree and .colc. 
+    # NYh3n2_HA_20000_4_1993.tree: part of .col file, BHV PCA trees.
+    # NYh3n2_HA_20000_4_1993.colc: part of .col file, the projected trees.
+# NYh3n2_HA_20000_4_1993.trop: the output of geophytterplus.DecomposeLFMTriangle, used as BHV triangle background.
+
 # Check http://www.mas.ncl.ac.uk/~ntmwn/geophytterplus/index.html for more details.
 # projected trees should be Newick format
 proj.lines <- readLines("E:/working/5/NYh3n2_HA_20000_5_2011.colc")
