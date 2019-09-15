@@ -101,9 +101,10 @@ tropTree_plot <- function(trees_ori, comb_set, outliers, pcs=3){
   treelabs <- c("PC1", "PC2", "PC3", topo_title)
   
   # Plot the trees.
+  col_value <- c("#000000","#000000","#000000","#8dd3c7","#696969","#bebada","#fb8072","#b3de69","#fdb462","#80b1d3","#fccde5","#d9d9d9")
   for(i in seq_along(trees)) ape::plot.phylo(trees[[i]], main=treelabs[i], type="c", direction="downwards", srt = 90, adj = 0.5,
-                                             label.offset = 0.2, cex = 2, cex.main = 2,  edge.width = 2, font = 2, font.main = 2) # Plot the trees
-  
+                                             label.offset = 0.2, cex = 2, cex.main = 2,  edge.width = 2, font = 2, font.main = 2,
+                                             col.main = col_value[i]) # Plot the trees
   new_base <- D_all[,comb_set]
   DD_base <- t(new_base)
   D_base <- normalize.ultrametrices(DD_base)
@@ -137,7 +138,7 @@ tropTree_plot <- function(trees_ori, comb_set, outliers, pcs=3){
       segments(tseg[[1]][1,2], tseg[[1]][2,2], tseg[[1]][1,3], tseg[[1]][2,3], col = 'black')
     }
   }
-  points(x = proj_2D_plot_m[,2], y = proj_2D_plot_m[,3], pch = 16, cex = 0.75, col = freq)
+  points(x = proj_2D_plot_m[,2], y = proj_2D_plot_m[,3], pch = 16, cex = 0.75, col = col_value[freq+3])
 }
 
 
