@@ -2,7 +2,10 @@ library(geophyttertools)
 library(ape)
 library(ggplot2)
 
-# Note: ".colc" is a file created by user, check http://www.mas.ncl.ac.uk/~ntmwn/geophytterplus/index.html for more details.
+
+# The ".trop" file is define by user. Basically, it is the output of the JAVA program, geophytterplus.DecomposeLFMTriangle.
+# The ".colc" file is define by user. It is a PART of the output of the JAVA program, geophytterplus.FitLFMTriangle.
+# Check http://www.mas.ncl.ac.uk/~ntmwn/geophytterplus/index.html for more details.
 # projected trees should be Newick format
 proj.lines <- readLines("E:/working/5/NYh3n2_HA_20000_5_2011.colc")
 
