@@ -55,7 +55,7 @@ BHVTree_plot <- function(proj_trees, BHVTrees, outName, frechet_mean){
   for(i in seq_along(summary)) topo_title[i] <- paste("Topology ",i," (",summary[i],")", sep="")
   
   
-  treelabs <- c("Tree 1", "Tree 2", "Tree 3","Fréchet mean", topo_title)
+  treelabs <- c("Tree 1", "Tree 2", "Tree 3","FrÃ©chet mean", topo_title)
   
   # Plot the trees.
   col_value <- c("#000000","#000000","#000000","#000000","#8dd3c7","#696969","#bebada","#fb8072","#b3de69","#fdb462","#80b1d3","#fccde5","#d9d9d9")
@@ -96,7 +96,7 @@ for(i in 1:21){
   proj.lines <- proj.lines[2:(length(proj.lines)-9)]
   BHVTree_plot(proj.lines,BHVTrees,year[i],frechet_mean[i])
   
-  background <- read.topologies(paste("./BHV/N_NYh3n2_HA_20000_5_",year[i],".trop",sep=""))
+  background <- read.topologies(paste("./BHV/N_NYh3n2_HA_20000_5_",year[i],".tri",sep=""))
   points <- read.projections(paste("./ori_colc/N_NYh3n2_HA_20000_5_",year[i],".colc",sep=""))
   BHV_Triangle(background, points, year[i])
 }
